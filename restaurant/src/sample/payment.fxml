@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="paymentAnchor" prefHeight="400.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.paymentController">
+<children>
+   <TextField fx:id="cardNametf" layoutX="452.0" layoutY="44.0" prefHeight="27.0" prefWidth="237.0" />
+   <TextField fx:id="cardDatetf" layoutX="452.0" layoutY="162.0" prefHeight="27.0" prefWidth="237.0" />
+   <TextField fx:id="cardCodetf" layoutX="452.0" layoutY="124.0" prefHeight="27.0" prefWidth="237.0" />
+   <TextField fx:id="cardNumbertf" layoutX="452.0" layoutY="84.0" prefHeight="27.0" prefWidth="237.0" />
+   <Label layoutX="309.0" layoutY="167.0" text="Expiry Date" />
+   <Label layoutX="309.0" layoutY="129.0" text="CVV" />
+   <Label layoutX="309.0" layoutY="89.0" text="Card Number" />
+   <Label layoutX="309.0" layoutY="49.0" text="Card Name" />
+   <Button fx:id="cardInfoSubmitBtn" layoutX="617.0" layoutY="216.0" mnemonicParsing="false" onAction="#cardInfoSubmit" prefHeight="27.0" prefWidth="72.0" text="Pay" />
+   <ImageView fitHeight="150.0" fitWidth="362.0" layoutX="356.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/visa.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="backBtn" layoutX="303.0" layoutY="216.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="72.0" text="Back" />
+      <Label layoutX="63.0" layoutY="49.0" text="Table Name" />
+      <TextField layoutX="136.0" layoutY="44.0" prefHeight="27.0" prefWidth="91.0" fx:id="tableNumbertf" />
+
+</children>
+</AnchorPane>

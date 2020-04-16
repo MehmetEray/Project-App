@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.initialController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="exitBtn" layoutX="84.0" layoutY="94.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+         </children></AnchorPane>
+      <Button layoutX="209.0" layoutY="200.0" mnemonicParsing="false" onAction="#payWithCard" prefHeight="96.0" prefWidth="224.0" text="Pay" />
+      <Button layoutX="209.0" layoutY="76.0" mnemonicParsing="false" onAction="#orderwithmenu" prefHeight="96.0" prefWidth="224.0" text="Order" />
+   </children>
+</AnchorPane>

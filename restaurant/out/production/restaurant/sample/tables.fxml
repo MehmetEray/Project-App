@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="tablesAnchor" prefHeight="805.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.tablesController">
+   <children>
+      <Button fx:id="table1" layoutX="102.0" layoutY="71.0" mnemonicParsing="false" onAction="#table1Check" prefHeight="55.0" prefWidth="91.0" text="Table 1" />
+      <Button fx:id="table5" layoutX="255.0" layoutY="158.0" mnemonicParsing="false" onAction="#table5Check" prefHeight="55.0" prefWidth="91.0" text="Table 5" />
+      <Button fx:id="table4" layoutX="102.0" layoutY="158.0" mnemonicParsing="false" onAction="#table4Check" prefHeight="55.0" prefWidth="91.0" text="Table 4" />
+      <Button fx:id="table3" layoutX="408.0" layoutY="71.0" mnemonicParsing="false" onAction="#table3Check" prefHeight="55.0" prefWidth="91.0" text="Table 3" />
+      <Button fx:id="table2" layoutX="255.0" layoutY="71.0" mnemonicParsing="false" onAction="#table2Check" prefHeight="55.0" prefWidth="91.0" text="Table 2" />
+      <Button fx:id="table6" layoutX="408.0" layoutY="158.0" mnemonicParsing="false" onAction="#table6Check" prefHeight="55.0" prefWidth="91.0" text="Table 6" />
+      <Label layoutX="278.0" layoutY="23.0" prefHeight="17.0" prefWidth="47.0" text="Tables" />
+      <Button fx:id="exitBtn" layoutX="579.0" layoutY="57.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="125.0" text="Exit" />
+
+         <AnchorPane layoutX="28.0" layoutY="246.0" prefHeight="200.0" prefWidth="194.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Hamburger" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/ev-yapimi-hamburger.jpg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="20 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="477.0" layoutY="246.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Salad" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/salad.jpg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="10 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="251.0" layoutY="246.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Pizza" />
+               <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/pizza3.jpeg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="19.90 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="702.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="95.0" text="Cheeseburger" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/cheese.jpeg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="18.90 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="702.0" layoutY="246.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Iskender" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/iskender-yeni.jpg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="25.90 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="477.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Soup" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/soup.jpeg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="5.90 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="250.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Coffee" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/cof.jpeg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="7.90 TL" />
+            </children></AnchorPane>
+         <AnchorPane layoutX="31.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Label layoutX="5.0" layoutY="8.0" prefHeight="28.0" prefWidth="77.0" text="Cola" />
+               <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/cola2.jpeg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="43.0" layoutY="176.0" text="Price :" />
+               <Label layoutX="83.0" layoutY="176.0" text="4.90 TL" />
+            </children></AnchorPane>
+         <CheckBox fx:id="hamburger" layoutX="79.0" layoutY="446.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="cheeseburger" layoutX="757.0" layoutY="686.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="iskender" layoutX="757.0" layoutY="446.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="soup" layoutX="544.0" layoutY="686.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="salad" layoutX="529.0" layoutY="446.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="coffee" layoutX="306.0" layoutY="686.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="kola" layoutX="79.0" layoutY="686.0" mnemonicParsing="false" text="add item" />
+         <CheckBox fx:id="pizza" layoutX="306.0" layoutY="446.0" mnemonicParsing="false" text="add item" />
+         <Button fx:id="backbuttonselection" layoutX="37.0" layoutY="737.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="123.0" onAction="#back" text="Back" />
+      </children>
+
+
+
+</AnchorPane>

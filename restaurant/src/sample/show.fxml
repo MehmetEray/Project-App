@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="amountAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.showController">
+   <children>
+      <Label layoutX="392.0" layoutY="232.0" prefHeight="48.0" prefWidth="146.0" text="Total Amount :" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="392.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="232.0">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <TableView fx:id="foodTable" prefHeight="200.0" prefWidth="950.0" />
+      <Label fx:id="amount" layoutX="640.0" layoutY="239.0" text=" -">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="34.0" layoutY="349.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="115.0" text="Back" />
+   </children>
+</AnchorPane>
