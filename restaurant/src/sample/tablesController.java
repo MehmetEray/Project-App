@@ -70,12 +70,18 @@ public class tablesController implements Initializable {
 
     static ArrayList<String> list;
     static boolean [] array;
+
     static ArrayList<String> priceList;
 
     public boolean[] checker = new boolean[6];
     UpdateApp app = new UpdateApp();
     selecttable select = new selecttable();
-
+    selecttable a = new selecttable();
+    selecttable b = new selecttable();
+    selecttable c = new selecttable();
+    selecttable d = new selecttable();
+    selecttable e = new selecttable();
+    selecttable f = new selecttable();
     @FXML
     void exit(){
         System.exit(3);
@@ -103,76 +109,145 @@ public class tablesController implements Initializable {
     @FXML
     void table1Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        boolean a = select.selectDurum(1);
-        if (a){
-            Alert alert = new Alert(Alert.AlertType.WARNING, "Please enter a valid card information!");
+        double a1 = a.selectPay(1);
+        if (a1 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
             alert.showAndWait();
-            System.out.println("asdasdasds");
         }
+
         else {
+
             checker[0] = true;
             app.updateAll(1, true, price());
-            table1.setStyle("-fx-background-color: red");
 
             Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
             tablesAnchor.getChildren().setAll(node);
-            System.out.println("12342143124");
+
         }
     }
     @FXML
     void table2Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        checker[1] = true;
-        app.updateAll(2,true, price());
-        table2.setStyle("-fx-background-color: red");
-        Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
-        tablesAnchor.getChildren().setAll(node);
+        double a2 = a.selectPay(2);
+        if (a2 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
+            alert.showAndWait();
+        }
+
+        else {
+            checker[1] = true;
+            app.updateAll(2, true, price());
+            Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
+            tablesAnchor.getChildren().setAll(node);
+        }
     }
     @FXML
     void table3Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        checker[2] = true;
-        app.updateAll(3,true, price());
-        table3.setStyle("-fx-background-color: red");
-        Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
-        tablesAnchor.getChildren().setAll(node);
+        double a3 = a.selectPay(3);
+        if (a3 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
+            alert.showAndWait();
+        }
+
+        else {
+            checker[2] = true;
+            app.updateAll(3, true, price());
+            Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
+            tablesAnchor.getChildren().setAll(node);
+        }
     }
     @FXML
     void table4Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        checker[3] = true;
-        app.updateAll(4,true, price());
-        table4.setStyle("-fx-background-color: red");
-        Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
-        tablesAnchor.getChildren().setAll(node);
+        double a4 = a.selectPay(4);
+        if (a4 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
+            alert.showAndWait();
+        }
+
+        else {
+            checker[3] = true;
+            app.updateAll(4, true, price());
+            Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
+            tablesAnchor.getChildren().setAll(node);
+        }
     }
     @FXML
     void table5Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        checker[4] = true;
-        app.updateAll(5,true, price());
-        table5.setStyle("-fx-background-color: red");
-        Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
-        tablesAnchor.getChildren().setAll(node);
+        double a5 = a.selectPay(5);
+        if (a5 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
+            alert.showAndWait();
+        }
+
+        else {
+            checker[4] = true;
+            app.updateAll(5, true, price());
+
+            Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
+            tablesAnchor.getChildren().setAll(node);
+        }
     }
     @FXML
     void table6Check(ActionEvent actionEvent) throws IOException {
         getArray();
-        checker[5] = true;
-        app.updateAll(6,true, price());
-        table6.setStyle("-fx-background-color: red");
-        Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
-        tablesAnchor.getChildren().setAll(node);
+        double a6 = a.selectPay(6);
+        if (a6 != 0.0){
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Masa dolu!");
+            alert.showAndWait();
+        }
+
+        else {
+            checker[5] = true;
+            app.updateAll(6, true, price());
+            Node node = FXMLLoader.load(getClass().getResource("show.fxml"));
+            tablesAnchor.getChildren().setAll(node);
+        }
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        table1.setStyle("-fx-background-color: green");
-        table2.setStyle("-fx-background-color: green");
-        table3.setStyle("-fx-background-color: green");
-        table4.setStyle("-fx-background-color: green");
-        table5.setStyle("-fx-background-color: green");
-        table6.setStyle("-fx-background-color: green");
+        fonk();
+    }
 
+    public void fonk(){
+        double a1 = a.selectPay(1);
+        if (a1 != 0){
+            table1.setStyle("-fx-background-color: red");
+            System.out.println(a1);
+        }
+        double a2 = b.selectPay(2);
+
+        if (a2 != 0){
+            table2.setStyle("-fx-background-color: red");
+            System.out.println(a2);
+        }
+        double a3 = c.selectPay(3);
+
+        if (a3 != 0){
+            table3.setStyle("-fx-background-color: red");
+            System.out.println(a3);
+        }
+        double a4 = d.selectPay(4);
+
+        if (a4 != 0){
+            table4.setStyle("-fx-background-color: red");
+            System.out.println(a4);
+        }
+        double a5 = e.selectPay(5);
+
+        if (a5 != 0){
+            table5.setStyle("-fx-background-color: red");
+            System.out.println(a5);
+        }
+        double a6 = f.selectPay(6);
+
+        if (a6 != 0){
+            table6.setStyle("-fx-background-color: red");
+            System.out.println(a6);
+            System.out.println("----------------------");
+        }
     }
 
     @FXML

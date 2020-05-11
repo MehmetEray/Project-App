@@ -69,9 +69,6 @@ public class UpdateApp {
             }
         }
 
-        /**
-         * @param args the command line arguments
-         */
         public static void main(String[] args) {
 
             UpdateApp app = new UpdateApp();

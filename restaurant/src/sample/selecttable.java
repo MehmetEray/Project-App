@@ -1,9 +1,6 @@
 package sample;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class selecttable {
 
@@ -22,21 +19,24 @@ public class selecttable {
 
     public double selectPay(int table_number) {
         String sql = "SELECT payment FROM customertables WHERE table_number = ?";
-
+        double se = 0;
         try (Connection conn = this.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
             // set the corresponding param
             pstmt.setInt(1, table_number);
             // select
-            pstmt.executeUpdate();
+//            pstmt.executeUpdate();
+            ResultSet rs =pstmt.executeQuery();
+            if (rs.next()) {
+                se = rs.getDouble("payment");
+            }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return 0;
+        return se;
     }
     public boolean selectDurum (int table_number) {
-
         String sql = "SELECT durum FROM customertables WHERE table_number = ?";
 
         try (Connection conn = this.connect();
@@ -46,23 +46,20 @@ public class selecttable {
             pstmt.setInt(1, table_number);
             // select
             pstmt.executeUpdate();
+            System.out.println(pstmt.executeUpdate());
+
+//            ResultSet rs = pstmt.executeQuery();
+//            return rs.next();
+
+
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+            return false;
         }
+
         return false;
-
-
-
-        // masa doluyken siparis verememe yapilacak
-        //
-
-        //
-        //
-        //
-        //
-        //
-
     }
+
     public static void main(String[] args) {
 
         selecttable select = new selecttable();
